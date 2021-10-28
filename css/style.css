@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -20,7 +25,8 @@ body a:hover {
 }
 
 main {
-
+    height: 90vh;
+    background-color: black;
 }
 
 .grey {
@@ -29,4 +35,14 @@ main {
   
 .white {
     color: white;
+}
+
+
+footer {
+    height: 10vh;
+    background-color: hsl(0deg 0% 16%);
+}
+
+aside {
+    float: left;
 }
