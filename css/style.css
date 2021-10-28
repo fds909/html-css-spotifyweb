@@ -5,9 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Commons */
 body {
     background-color: black;
     color: white;
+    font: 'Montserrat';
 }
 
 .clearfix::after {
@@ -29,6 +31,14 @@ main {
     background-color: black;
 }
 
+.upper-bar {
+    height: 10%;
+}
+
+.logo {
+    max-width: 100%;
+}
+
 .grey {
     color: #A3A3A3;
 }
@@ -37,6 +47,9 @@ main {
     color: white;
 }
 
+img {
+    max-width: 100%;
+}
 
 footer {
     height: 10vh;
@@ -45,4 +58,20 @@ footer {
 
 aside {
     float: left;
+}
+
+.upper-bar {
+    height: 10%;
+}
+
+.update {
+    border-radius: 50%;
+}
+
+.col {
+    
+}
+
+.col-left {
+
 }
