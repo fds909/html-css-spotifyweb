@@ -10,6 +10,7 @@ body {
     background-color: black;
     color: white;
     font: 'Montserrat';
+    display: block;
 }
 
 .clearfix::after {
@@ -51,10 +52,7 @@ img {
     max-width: 100%;
 }
 
-footer {
-    height: 10vh;
-    background-color: hsl(0deg 0% 16%);
-}
+
 
 aside {
     float: left;
@@ -68,10 +66,9 @@ aside {
     border-radius: 50%;
 }
 
-.col {
-    
-}
-
-.col-left {
-
+footer {
+    height: 10vh;
+    background-color: hsl(0deg 0% 16%);
+    display: block;
+    position: fixed;
 }
