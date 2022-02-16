@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Spotify</title>
@@ -29,9 +31,24 @@
                 <!-- Nav Actions -->
                 <div class="nav-actions">
                     <ul>
-                        <li>Home</li>
-                        <li>Cerca</li>
-                        <li>La tua libreria</li>
+                        <li>
+                            <div class="action">
+                                <img src="img/home.svg" alt="Home">
+                                <span class="action-text">Home</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="action">
+                                <img src="img/search.svg" alt="Search">
+                                <span class="action-text">Cerca</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="action">
+                                <img src="img/libreria.svg" alt="Library">
+                                <span class="action-text">La tua libreria</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -40,7 +57,8 @@
                     <h3>Playlist</h3>
 
                     <div class="create-playlist">
-                        Crea Playlists
+                        <i class="fas fa-plus-square"></i>
+                        <span>Crea Playlist</span>
                     </div>
 
                     <ul>
@@ -54,10 +72,19 @@
                     </ul>
                 </div>
 
+                <!-- User -->
                 <div class="user">
-                    <div>Installa app</div>
-                    <div>John Doe</div>
+                    <div class="user-install">
+                        <img src="img/download.svg" alt="Download">
+                        <span>Installa app</span>
+                    </div>
+
+                    <div class="user-profile">
+                        <div class="profile-circle"></div>
+                        <h3>John Doe</h3>
+                    </div>
                 </div>
+
             </aside>
             <!-- End Main Nav -->
 
