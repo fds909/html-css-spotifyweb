@@ -25,7 +25,8 @@
             <aside class="main-nav">
                 <!-- Logo -->
                 <div class="logo">
-                    <img src="img/logo.svg" alt="Spotify Logo">
+                    <img class="logo-full" src="img/logo.svg" alt="Spotify Logo">
+                    <img class="logo-small" src="img/logo-small.svg" alt="Spotify Logo">
                 </div>
 
                 <!-- Nav Actions -->
@@ -108,10 +109,52 @@
                         </ul>
                         
                         <div class="green-line"></div>
-    
+                        
                     </div>
                 </div>
                 
+                <!-- Recently played -->
+                <section id="recently-played">
+
+                    <h2>Recently Played</h2>
+
+                    <div class="albums">
+                        <div class="album">
+                            <div class="album-cover" id="cover-1"></div>
+                            <h4>Heavy Metal</h4>
+                            <div class="subtitle">Subtitle</div>
+                        </div>
+                        <div class="album">
+                            <div class="album-cover" id="cover-2"></div>
+                            <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                            <div class="subtitle">Kyle Dixon & Micheal Stein</div>
+                        </div>
+                        <div class="album">
+                            <div class="album-cover" id="cover-3"></div>
+                            <h4>A quiet place</h4>
+                            <div class="subtitle">Subtitle</div>
+                        </div>
+                        <div class="album">
+                            <div class="album-cover" id="cover-4"></div>
+                            <h4>Split</h4>
+                            <div class="subtitle">Subtitle</div>
+                        </div>
+                        <div class="album">
+                            <div class="album-cover" id="cover-5"></div>
+                            <h4>A cure for wellness</h4>
+                            <div class="subtitle">Subtitle</div>
+                        </div>
+                        <div class="album">
+                            <div class="album-cover" id="cover-6"></div>
+                            <h4>Sinister</h4>
+                            <div class="subtitle">Subtitle</div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                
+
             </div>
 
         </main>
@@ -119,7 +162,54 @@
 
         <!-- FOOTER -->
         <footer>
-            
+            <!-- Footer left -->
+            <div class="footer-left">
+                <img src="img/sinister.jpeg" alt="Sinister">
+
+                <div class="track">
+                    <div class="artist">Sinister</div>
+                    <div class="track-title">Brano nome</div>
+                </div>
+
+                <div class="like-folder">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+
+            <!-- Footer player -->
+            <div class="footer-player">
+                <div class="player-buttons">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="fas fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+
+                <div class="player-time">
+                    <span class="play-min">0:25</span>
+                    <div class="play-line">
+                        <div class="line-fill">
+                            <span class="line-dot"></span>
+                        </div>
+                    </div>
+                    <span class="play-min">4:35</span>
+                </div>
+            </div>
+
+            <!-- Footer right -->
+            <div class="footer-right">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+
+                <div class="volume-line">
+                    <div class="line-fill">
+                        <span class="line-dot"></span>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- END FOOTER -->
     </div>
