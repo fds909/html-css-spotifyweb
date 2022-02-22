@@ -263,12 +263,12 @@ main {
 .main-menu .green-line {
     width: 30px;
     margin-left: 40px;
-    background-color: pink;
     border-top: 2px solid #adff2f;
 }
 
+/* MAIN CONTENT */
 /* Recently played */
-#recently-played h2 {
+.album-row h2 {
     margin-bottom: 20px;
 }
 
@@ -280,52 +280,76 @@ main {
 }
 
 .album {
-    display: flex;
+    float: left;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: calc((100% / 6) - 10px);
 }
 
-.album-cover {
-    width: 100%;
-    height: 200px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#cover-1 {
-    background-image: url('../img/metal_lifting.jpg');
-}
-
-#cover-2 {
-    background-image: url('../img/stranger.jpeg');
-}
-
-#cover-3 {
-    background-image: url('../img/aquietplace.jpeg');
-}
-
-#cover-4 {
-    background-image: url('../img/split.jpeg');
-}
-
-#cover-5 {
-    background-image: url('../img/cure.jpeg');
-}
-
-#cover-6 {
-    background-image: url('../img/sinister.jpeg');
-}
-
-.album h4 {
+.cover-container {
+    position: relative;
     margin-bottom: 10px;
 }
 
-.album .subtitle {
+.cover-container img {
+    max-width: 100%;
+}
+
+.cover-layover {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover-layover i {
+    display: none;
+    font-size: 65px;
+}
+
+.cover-container:hover .cover-layover,
+.cover-container:hover i {
+    display: flex;
+}
+
+.album-text {
+    text-align: center;
+}
+
+.album-text h4 {
+    margin-bottom: 10px;
+}
+
+.album-text .subtitle {
     font-size: 14px;
     font-weight: 600;
     color: #797c80;
+}
+
+/* Created - Popoular */
+#created .albums,
+#popoular .albums {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#created p,
+#popoular p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #797c80;
+    margin-bottom: 30px;
+}
+
+#popoular .cover-container img,
+#popoular .cover-container .cover-layover {
+    border-radius: 50%;
 }
 
 /* END MAIN */
@@ -410,11 +434,11 @@ footer {
 }
 
 .fa-play-circle {
-    font-size: 25px;
+    font-size: 35px;
 }
 
-.fa-play-circle:hover {
-    transform: scale(1.15);
+.player-buttons .fa-play-circle:hover {
+    transform: scale(1.10);
 }
 
 .player-buttons i {
