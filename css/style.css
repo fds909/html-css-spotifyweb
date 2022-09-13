@@ -193,6 +193,7 @@ main {
     align-items: center;
     width: calc(100% - 230px);
     height: 90px;
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     position: fixed;
@@ -276,6 +277,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
 }
 
