@@ -19,6 +19,7 @@ body {
 #app-wrapper {
     width: 100%;
     height: 100vh;
+    min-height: 180px;
 }
 
 main {
@@ -59,6 +60,20 @@ main {
     height: 120px; 
     color: #a3a3a3;
     font-weight: 400;
+}
+
+.nav-actions ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-actions li {
+    width: 100%;
+}
+
+.nav-actions .action {
+    width: 100%;
 }
 
 .nav-actions ul li:first-child {
@@ -234,18 +249,17 @@ main {
     margin-top: 30px;
 }
 
-.menu-container {
-    width: 70%;
-    margin: 0 auto;
-}
-
 .main-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     margin-bottom: 3px;
 }
 
 .main-menu li {
     display: inline-block;
+    margin-bottom: 25px;
 }
 
 .main-menu a {
@@ -276,9 +290,11 @@ main {
 .albums {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 10px;
     width: 100%;
+
 }
 
 .album {
@@ -329,7 +345,7 @@ main {
 }
 
 .album-text .subtitle {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: #797c80;
 }
@@ -353,6 +369,20 @@ main {
 #popoular .cover-container .cover-layover {
     border-radius: 50%;
 }
+
+@media screen and (max-width: 991px) {
+    .album {
+        width: calc((100% / 4) - 10px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .album {
+        width: calc((100% / 2) - 10px);
+    }
+}
+
+
 
 /* END MAIN */
 
@@ -553,6 +583,12 @@ footer {
         display: none;
     }
 
+    .nav-actions .action {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
     .nav-actions ul li:first-child {
         border-left: 0 solid;
     }
@@ -567,6 +603,10 @@ footer {
         display: none;
     }
 
+    .user {
+        margin-left: 0;
+    }
+
     .user-install span,
     .user-profile h3 {
         display: none;
@@ -574,5 +614,11 @@ footer {
 
     .user-profile {
         border-top: 0 solid;
+    }
+
+    .user-profile, 
+    .user-install {
+        display: flex;
+        justify-content: center;
     }
 }
